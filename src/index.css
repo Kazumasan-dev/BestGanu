@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-primary: #0A4D4F;
+  --color-primary-light: #126366;
+  --color-primary-dark: #052F31;
+  --color-accent: #A9DFBF;
+  --color-accent-dark: #27AE60;
+  --color-bg-sand: #F4F1EA;
+  --color-bg-card: #FAF8F5;
+}
+
+/* Custom CSS Styles */
+@layer utilities {
+  .dot-matrix {
+    background-image: radial-gradient(#0A4D4F 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    opacity: 0.15;
+  }
+  
+  .dot-matrix-accent {
+    background-image: radial-gradient(#A9DFBF 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    opacity: 0.25;
+  }
+
+  /* Custom thin scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #0A4D4F;
+    border-radius: 9999px;
+  }
+}
+
+/* Base custom interactive effects */
+.hover-scale {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+

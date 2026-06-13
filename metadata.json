@@ -1,0 +1,6 @@
+{
+  "name": "BestGanu",
+  "description": "BestGanu (Terengganu Eco Tourism) mobile-first PWA featuring an eco-tourism marketplace, AI smart itinerary planner, local micro-vendor cards, and offline-capable QR code booking tickets.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
